@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <header>
+        <h1>My Task Checker</h1>
+        <p>Track your tasks & important things professionally</p>
+    </header>
+
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task...">
+        <select id="taskPriority">
+            <option value="normal">Normal</option>
+            <option value="important">Important</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-sections">
+        <div class="task-box">
+            <h2>Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="task-box important">
+            <h2>Important</h2>
+            <ul id="importantList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
